@@ -6,7 +6,7 @@
 /*   By: sangseo <sangseo@student.42gyeongsan.kr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 22:05:01 by sangseo           #+#    #+#             */
-/*   Updated: 2025/02/04 09:31:18 by sangseo          ###   ########.fr       */
+/*   Updated: 2025/02/04 21:08:00 by sangseo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,8 @@ static void	check_component(char **c_map)
 	i = 0;
 	while (c_map[i])
 	{
+		if (c_map[i][0] == '\n')
+			mfree_perror("Error: Over newline\n", c_map);
 		j = 0;
 		while (c_map[i][j])
 		{

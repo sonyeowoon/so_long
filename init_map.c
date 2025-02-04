@@ -6,7 +6,7 @@
 /*   By: sangseo <sangseo@student.42gyeongsan.kr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 03:02:31 by sangseo           #+#    #+#             */
-/*   Updated: 2025/02/04 11:31:26 by sangseo          ###   ########.fr       */
+/*   Updated: 2025/02/04 20:38:54 by sangseo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ static void	init_map_setup(int *cnt, int *fd, char *file_name)
 {
 	*cnt = cnt_line(file_name);
 	if (*cnt < 3)
-		print_error("Error: Not enough row\n");
+		print_error("Error: Invalid row\n");
 	*fd = open(file_name, O_RDONLY);
 	if (*fd == -1)
 		print_error("Error: File open failure\n");
