@@ -9,6 +9,11 @@ SRCS = so_long.c \
 	   get_next_line.c \
 	   get_next_line_utils.c \
 	   display_map.c \
+	   ft_printf.c \
+	   ft_write.c \
+	   ft_write2.c \
+	   game_exit.c \
+	   move_player.c \
 
 OBJS = $(SRCS:.c=.o)
 
