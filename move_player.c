@@ -6,7 +6,7 @@
 /*   By: sangseo <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 17:35:48 by sangseo           #+#    #+#             */
-/*   Updated: 2025/02/04 19:51:22 by sangseo          ###   ########.fr       */
+/*   Updated: 2025/02/04 22:35:42 by sangseo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ int	move_player(int keycode, t_vars *v)
 		i = 2;
 	else if (keycode == 'a')
 		i = 3;
+	else if (keycode == 65307)
+		game_exit(v);
 	else
 		return (0);
 	move_dxdy(v, i);
