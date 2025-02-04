@@ -6,7 +6,7 @@
 /*   By: sangseo <sangseo@student.42gyeongsan.kr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 16:00:07 by sangseo           #+#    #+#             */
-/*   Updated: 2025/02/03 21:52:47 by sangseo          ###   ########.fr       */
+/*   Updated: 2025/02/04 09:32:46 by sangseo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	dxdy_setup(int *dx, int *dy)
 	dy[3] = -1;
 }
 
-void    dfs(char **map, int *flg, int x, int y)
+void	dfs(char **map, int *flg, int x, int y)
 {
 	int	dx[4];
 	int	dy[4];

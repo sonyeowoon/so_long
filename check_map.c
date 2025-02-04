@@ -6,7 +6,7 @@
 /*   By: sangseo <sangseo@student.42gyeongsan.kr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 22:05:01 by sangseo           #+#    #+#             */
-/*   Updated: 2025/02/03 15:48:13 by sangseo          ###   ########.fr       */
+/*   Updated: 2025/02/04 09:31:18 by sangseo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,8 +63,8 @@ static void	component_cnt(char **m)
 
 static void	check_component(char **c_map)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 	char	c;
 
 	i = 0;

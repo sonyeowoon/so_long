@@ -6,7 +6,7 @@
 /*   By: sangseo <sangseo@student.42gyeongsan.kr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 03:02:31 by sangseo           #+#    #+#             */
-/*   Updated: 2025/02/03 15:27:52 by sangseo          ###   ########.fr       */
+/*   Updated: 2025/02/04 11:31:26 by sangseo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	cnt_line(char *file_name)
 {
-	int	fd;
-	int	i;
+	int		fd;
+	int		i;
 	char	*line;
 
 	fd = open(file_name, O_RDONLY);
@@ -25,7 +25,7 @@ int	cnt_line(char *file_name)
 	if (!line)
 		return (0);
 	i = 0;
-	while (line && *line)
+	while (line && *line && *line != '\n')
 	{
 		i++;
 		free(line);
@@ -60,9 +60,9 @@ char	**init_map(char *file_name)
 {
 	char	*line;
 	char	**c_map;
-	int	cnt;
-	int	fd;
-	int	i;
+	int		cnt;
+	int		fd;
+	int		i;
 
 	init_map_setup(&cnt, &fd, file_name);
 	c_map = (char **)malloc(sizeof(char *) * (cnt + 1));

@@ -6,7 +6,7 @@
 /*   By: sangseo <sangseo@student.42gyeongsan.kr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:53:59 by sangseo           #+#    #+#             */
-/*   Updated: 2025/02/03 21:51:20 by sangseo          ###   ########.fr       */
+/*   Updated: 2025/02/04 12:06:30 by sangseo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,12 @@ void	check_rectangle(char **m)
 	i = 1;
 	while (m[i])
 	{
-		if (width != ft_strlen(m[i]))
+		if ((size_t)width != ft_strlen(m[i]))
 			mfree_perror("Error: Not rectangle map\n", m);
 		i++;
 	}
-    if (width < 4)
-        mfree_perror("Error: Not enough column\n", m);
+	if (width < 4)
+		mfree_perror("Error: Not enough column\n", m);
 }
 
 void	check_walls(char **m)
