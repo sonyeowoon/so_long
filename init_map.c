@@ -6,7 +6,7 @@
 /*   By: sangseo <sangseo@student.42gyeongsan.kr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 03:02:31 by sangseo           #+#    #+#             */
-/*   Updated: 2025/02/04 20:38:54 by sangseo          ###   ########.fr       */
+/*   Updated: 2025/02/04 22:05:36 by sangseo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	cnt_line(char *file_name)
 	if (!line)
 		return (0);
 	i = 0;
-	while (line && *line && *line != '\n')
+	while (line && *line)
 	{
 		i++;
 		free(line);
